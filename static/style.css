@@ -1,0 +1,51 @@
+#quiz{
+    display:flex;
+    align-items: "center";
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 5px;
+    width: 200%;
+}
+
+#contenedor > div {
+    padding: .5em;
+
+  }
+
+  @media (min-width: 500px) {
+
+    #contenido{
+        width: 600px;
+    }
+    #home{
+      margin-left: 100px;
+    }
+    #seccion{
+      margin-left: 50px;
+    }
+    #img{
+      margin-left: 100px;
+    }
+    #imgmaya{
+      margin-left: 48px;
+    }
+    #botoncat{
+      margin-left: 3.8%;
+    }
+  }
+  @media (max-width: 500px) {
+    #botoncat{
+      margin-left: 25%;
+    }
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
